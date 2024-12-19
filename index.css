@@ -1,0 +1,123 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+html, body, nav{
+  background: linear-gradient(to left, #ede8f5, #adbbda);
+}
+
+html, body {
+  width: 100%;
+}
+
+h1, h2, h3, h4 {
+  color: black !important;
+  font-weight: bold;
+}
+ul{
+  text-align: start;
+}
+p {
+  text-align: start;
+  color: #6c757d !important;
+}
+
+button {
+  background-color: black !important;
+  color: #ede8f5;
+  padding: 5px;
+}
+button:hover {
+  transform: translateY(-2px); /* Slight lift effect */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 8px #3d52a0;
+}
+
+nav {
+  background: linear-gradient(360deg, #ede8f5, #adbbda);
+  border-bottom: 4px solid #adbbda;
+}
+
+.centered-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.fixed-sidebar {
+    position: fixed;
+    overflow: auto;
+    margin-top: 120px;
+    top: 0;
+    right: 5;
+    max-width: 300px;
+    max-height: 70vh;
+    background-color: #dbdbdb;
+    padding: 20px;
+    border-left: 4px solid #3d52a0;
+    border-right: 10px solid #3d52a0;
+    border-top:4px solid #3d52a0;
+    border-bottom: 4px solid #3d52a0;
+    box-shadow: #3d52a0;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.fixed-sidebar  li {
+  color: #3d52a0 !important;
+}
+
+.fixed-sidebar .scrollable-content {
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+@media (max-width: 992px) {
+    .fixed-sidebar {
+        display: none;
+    }
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.blog-post {
+    margin-bottom: 30px;
+}
+
+.blog-post h5 {
+    margin-top: 10px;
+}
+
+.blog-post p {
+    color: #6c757d;
+}
+
+.relative {
+  position: relative !important; /* Changes sidebar to relative */
+}
+
+.card-hover:hover {
+  transform: scale(1.03); /* Slight zoom */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+  cursor: pointer;
+}
+
+.custom-interview-border {
+  border-bottom: 8px solid black;
+  border-left: 10px solid black;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-radius: 8px;
+  padding: 4px;
+  margin: .7px;
+}
+.custom-interview-border:hover {
+  
+}
